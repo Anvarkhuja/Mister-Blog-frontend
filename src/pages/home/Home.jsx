@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(()=>{
      const fetchPosts = async ()=>{
-     const res = await axiosInstance.get("http://localhost:5000/api/posts"+search)
+     const res = await axiosInstance.get("https://mister-blog-backend.vercel.app/api/posts"+search)
      setPosts(res.data)
      }
      fetchPosts()

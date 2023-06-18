@@ -16,7 +16,7 @@ export default function Register() {
     try{
       
     
-    const res = await axiosInstance.post("http://localhost:5000/api/auth/register", {
+    const res = await axiosInstance.post("https://mister-blog-backend.vercel.app/api/auth/register", {
       username,
       email,
       password

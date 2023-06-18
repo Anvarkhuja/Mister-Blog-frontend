@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({type:"LOGIN_START"});
     try{
-      const res = await axiosInstance.post("http://localhost:5000/api/auth/login", {
+      const res = await axiosInstance.post("https://mister-blog-backend.vercel.app/api/auth/login", {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });

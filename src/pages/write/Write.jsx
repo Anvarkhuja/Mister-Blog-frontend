@@ -30,7 +30,7 @@ export default function Write() {
       }
     }
     try{
-      const res = await axiosInstance.post("http://localhost:5000/api/posts", newPost);
+      const res = await axiosInstance.post("https://mister-blog-backend.vercel.app/api/posts", newPost);
       window.location.replace("/post/" + res.data._id);
     }catch(err){}
     

@@ -16,7 +16,7 @@ export default function Settings() {
   const [success,setSuccess] = useState(false);
 
   const {user,dispatch} = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://mister-blog-backend.vercel.app/images/"
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
@@ -42,7 +42,7 @@ export default function Settings() {
     }
     try{
       
-      const res = await axiosInstance.put("http://localhost:5000/api/users/"+ user._id, updatedUser);
+      const res = await axiosInstance.put("https://mister-blog-backend.vercel.app/api/users/"+ user._id, updatedUser);
       setSuccess(true);
       dispatch({type:"UPDATE_SUCCESS", payload:res.data })
       
