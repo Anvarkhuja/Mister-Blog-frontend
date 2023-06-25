@@ -16,7 +16,7 @@ export default function Settings() {
   const [success,setSuccess] = useState(false);
 
   const {user,dispatch} = useContext(Context);
-  const PF = "https://mister-blog-backend.vercel.app/images/"
+  const PF = "https://mister-blog-backend.vercel.app/api/upload"
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
