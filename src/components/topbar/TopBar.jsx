@@ -5,7 +5,7 @@ import "./topbar.css"
 
 export default function Topbar() {
   const {user, dispatch} = useContext(Context); 
-  const PF = "https://mister-blog-backend.vercel.app/api/images/";
+  const PF = "https://mister-blog-backend.vercel.app/api/upload";
 
 const handleLogout = () =>{
   dispatch({type:"LOGOUT"})
