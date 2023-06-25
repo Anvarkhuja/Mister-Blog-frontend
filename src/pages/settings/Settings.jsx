@@ -34,7 +34,7 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try{
-        await axiosInstance.post("https://mister-blog-backend.vercel.app/api/upload/",data);
+        await axiosInstance.post("https://mister-blog-backend.vercel.app/upload",data);
         
       }catch(err){
 
