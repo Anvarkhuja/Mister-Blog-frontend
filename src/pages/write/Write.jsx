@@ -24,7 +24,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try{
-        await axiosInstance.post("https://mister-blog-backend.vercel.app/api/upload/",data);
+        await axiosInstance.post("https://mister-blog-backend.vercel.app/upload",data);
       }catch(err){
 
       }
